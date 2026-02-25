@@ -2,18 +2,12 @@
   --site-max: 760px;
   --col-gap: 44px;
   --name-gap: 14px;
-
-  /* +10% photo size */
-  --photo-size: 242px;   /* was 220 */
-
+  --photo-size: 242px;
   --photo-top-nudge: 3px;
-
-  /* vertical rhythm */
-  --nav-to-name: 26px;   /* bumped down a bit */
+  --nav-to-name: 26px;
   --name-to-cols: 28px;
 }
 
-/* Constrain site width */
 .container{
   max-width: var(--site-max) !important;
   width: 100%;
@@ -26,18 +20,15 @@
   padding-right: 0 !important;
 }
 
-/* Push content slightly downward */
-body{
+.jl-main{
   padding-top: var(--nav-to-name);
   padding-bottom: 40px;
 }
 
-/* Header spacing */
 .academic-header{
   margin: 0 0 var(--name-to-cols);
 }
 
-/* Name centered across both columns */
 .jl-name{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -52,7 +43,15 @@ body{
 .jl-first{ justify-self: end; text-align: right; }
 .jl-last{  justify-self: start; text-align: left; }
 
-/* Equal columns */
+/* Desktop/mobile name toggle */
+.jl-desktop { display: grid !important; }
+.jl-mobile  { display: none !important; }
+
+@media (max-width: 768px) {
+  .jl-desktop { display: none !important; }
+  .jl-mobile  { display: block !important; }
+}
+
 .academic-content{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -60,7 +59,6 @@ body{
   align-items: start;
 }
 
-/* Right-align photo within its column */
 .academic-photo{
   justify-self: end;
   padding-top: var(--photo-top-nudge);
@@ -74,54 +72,43 @@ body{
   margin: 0;
 }
 
-/* ABOUT PAGE TEXT SPACING */
 .academic-text{
   min-width: 0;
 }
 
 .academic-text p{
   text-align: justify;
-  line-height: 1.25;   /* single-ish spacing as requested */
+  line-height: 1.25;
   margin: 0 0 16px;
   color: #333;
 }
 
 .academic-text p:last-child{ margin-bottom: 0; }
 
-/* Links */
 a:link, a:visited{ color: #1E226F; }
 a:hover{ color: #121545; text-decoration: underline; }
 
-/* Mobile */
 @media (max-width: 820px){
   .academic-content{
     grid-template-columns: 1fr;
     row-gap: 18px;
     justify-items: center;
   }
-
   .academic-text{ width: 100%; }
-
   .jl-name{
     grid-template-columns: 1fr;
     justify-items: center;
   }
-
   .jl-first, .jl-last{
     justify-self: center;
     text-align: center;
   }
-
   .academic-photo{
     justify-self: center;
     padding-top: 0;
   }
 }
 
-/* =========================
-   RESEARCH PAGE — scoped
-   ========================= */
-/* Scope to the /research/ page via body class Hugo adds: .page-research */
 body.page-research .page-content h4,
 body.page-research .content h4 {
   text-align: center;
@@ -151,10 +138,6 @@ body.page-research .award::before {
   left: -24px;
 }
 
-
-/* =========================
-   RESEARCH PAGE — scoped via wrapper
-   ========================= */
 .research-page h4 {
   text-align: center;
   margin-top: 44px;
@@ -163,16 +146,14 @@ body.page-research .award::before {
 }
 
 .research-page p {
-  line-height: 1.6;        /* "roomier" */
-  margin: 0 0 22px;        /* more paragraph spacing */
+  line-height: 1.6;
+  margin: 0 0 22px;
 }
 
-/* extra separation between sections (since your sections are H4 headers) */
 .research-page h4 + p {
   margin-top: 6px;
 }
 
-/* award line: indent + star bullet */
 .research-page .award {
   margin-left: 36px;
   margin-top: -10px;
