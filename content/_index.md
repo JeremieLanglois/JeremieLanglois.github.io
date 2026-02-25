@@ -10,7 +10,7 @@ title: "Jérémie Langlois"
 </div>
 
 <div class="academic-text">
-<p>I am a Ph.D. candidate in the <a href="https://polisci.wisc.edu/">Department of Political Science</a> at the University of Wisconsin-Madison. My interests within comparative politics sit at the intersection of institutional change, governance, and contentious politics. Broadly, I study the political geography of administrative reform in subnational state institutions and public goods provision and its consequences for collective action.<p>
+<p>I am a Ph.D. candidate in the <a href="https://polisci.wisc.edu/">Department of Political Science</a> at the University of Wisconsin-Madison. My interests within comparative politics sit at the intersection of institutional change, governance, and contentious politics. Broadly, I study the political geography of administrative reform in subnational state institutions and public goods provision and its consequences for collective action.</p>
 
 <p>My dissertation examines how repertoires and grievances scale (or do not) across institutional targets across space and time; theorizing the implications of localized opportunity structures for opposition coalitions. With a focus on North Africa, I combine statistical analysis of original event and administrative data with historical sociology and other qualitative methods grounded in fieldwork and documentary analysis of Arabic- and French-language sources.</p>
 
