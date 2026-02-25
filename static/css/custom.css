@@ -27,7 +27,7 @@
 }
 
 /* Push content slightly downward */
-.jl-main{
+body{
   padding-top: var(--nav-to-name);
   padding-bottom: 40px;
 }
@@ -186,4 +186,10 @@ body.page-research .award::before {
   content: "★";
   position: absolute;
   left: -24px;
+}
+
+/* Hide theme intro block */
+.intro > h1,
+.intro > h2 {
+    display: none !important;
 }
