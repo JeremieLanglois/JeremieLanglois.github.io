@@ -1,0 +1,32 @@
+baseURL = "https://jeremielanglois.com/"
+languageCode = "en-us"
+title = "Jérémie Langlois"
+theme = "minimal"
+
+[params]
+  author = "Jérémie Langlois"
+  description = "Ph.D. Candidate, Political Science, University of Wisconsin-Madison"
+  accent = "#1E226F"
+  showBorder = false
+  backgroundColor = "white"
+  font = "Raleway"
+  css = ["css/custom.css"]
+
+[menu]
+  [[menu.main]]
+    name = "About me"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Research"
+    url = "/research/"
+    weight = 2
+  [[menu.main]]
+    name = "CV"
+    url = "/cv/"
+    weight = 3
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
