@@ -72,6 +72,36 @@
   margin: 0;
 }
 
+.social-icons{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.social-icons a{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #555;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: background .2s;
+}
+
+.social-icons a:hover{
+  background: #1E226F;
+  text-decoration: none;
+}
+
+.social-icons svg{
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+}
+
 .academic-text{
   min-width: 0;
 }
@@ -85,8 +115,8 @@
 
 .academic-text p:last-child{ margin-bottom: 0; }
 
-a:link, a:visited{ color: #1E226F; }
-a:hover{ color: #121545; text-decoration: underline; }
+a:link, a:visited{ color: #0000FF; }
+a:hover{ color: #0000CC; text-decoration: underline; }
 
 @media (max-width: 820px){
   .academic-content{

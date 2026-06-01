@@ -9,8 +9,9 @@ theme = "minimal"
   accent = "#1E226F"
   showBorder = false
   backgroundColor = "white"
-  font = "Raleway"
+  font = "Roboto"
   css = ["css/custom.css"]
+  favicon = "favicon.png"
 
 [menu]
   [[menu.main]]
